@@ -1,0 +1,46 @@
+.navbar > ul > li {
+  display: inline;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: #938e8e;
+  size: 12px;
+  font-weight: 600;
+}
+.nav-centrall > ul > li {
+  display: inline;
+  padding-left: 160px;
+  padding-right: 110px;
+  text-align: center;
+}
+.nav-centrall >ul>li:hover{
+    color: rgb(248, 184, 7);
+}
+.nav-centrall > ul > img {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+.nav-bottom > ul > li {
+  display: inline;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: darkred;
+  padding: 10px;
+  size: 12px;
+  
+}
+#nav-bottom  {
+   border: 1px solid rebeccapurple;
+   width: 100%;
+   background-color: darkred;
+   padding-left: 80px;
+   padding-right: 40px;
+}
+ .nav-bottom >ul>li:hover{
+    color: yellow;
+}
