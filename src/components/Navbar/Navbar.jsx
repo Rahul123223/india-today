@@ -31,8 +31,8 @@ export const Navbar = () => {
             src="https://akm-img-a-in.tosshub.com/sites/all/themes/itg/logo.png?v=1.52"
             alt=""
           />
-          <li>App</li>
-          <li>Magazine</li>
+          <li>APP</li>
+          <li>MAGAZINE</li>
         </ul>
       </div>
       <div className="nav-bottom" id="nav-bottom">
@@ -43,8 +43,7 @@ export const Navbar = () => {
               style={{
                 textDecoration: "none",
                 color: "white",
-              }
-            }
+              }}
             >
               HOME
             </Link>
@@ -117,7 +116,8 @@ export const Navbar = () => {
               style={{ textDecoration: "none", color: "white" }}
             >
               HAPPINESS QUEST
-            </Link>
+            </Link> 
+           
           </li>
           <li>
             <FaBitcoin style={{ height: "20px" }}></FaBitcoin>
