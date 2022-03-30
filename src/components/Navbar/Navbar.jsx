@@ -6,6 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
 import { CgScreen } from "react-icons/cg";
 import { FaBitcoin } from "react-icons/fa";
+import { BiEditAlt } from "react-icons/bi";
 
 export const Navbar = () => {
   return (
@@ -37,8 +38,14 @@ export const Navbar = () => {
       <div className="nav-bottom" id="nav-bottom">
         <ul>
           <li>
-            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-              {" "}
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }
+            }
+            >
               HOME
             </Link>
           </li>
@@ -47,7 +54,7 @@ export const Navbar = () => {
               to="/myfeed"
               style={{ textDecoration: "none", color: "white" }}
             >
-              {" "}
+              <BiEditAlt></BiEditAlt>
               MY FEED
             </Link>
           </li>
@@ -56,7 +63,6 @@ export const Navbar = () => {
               to="/india"
               style={{ textDecoration: "none", color: "white" }}
             >
-              {" "}
               INDIA
             </Link>
           </li>
@@ -126,7 +132,12 @@ export const Navbar = () => {
             <FaSearch style={{ height: "20px" }}></FaSearch>
           </li>
           <li>
-            <FaUser style={{ height: "20px" }}></FaUser>
+            <Link
+              to="/signup"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <FaUser style={{ height: "20px" }}></FaUser>
+            </Link>
           </li>
         </ul>
       </div>

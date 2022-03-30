@@ -12,14 +12,14 @@
   display: inline;
   padding-left: 160px;
   padding-right: 110px;
-  text-align: center;
+  font-size: 25px;
 }
 .nav-centrall > ul > li:hover {
   color: rgb(248, 184, 7);
 }
 .nav-centrall > ul > img {
-  height: 40px;
-  width: 100px;
+  height: 60px;
+  width: 120px;
   text-align: center;
   justify-content: center;
 }
@@ -41,14 +41,10 @@
   background-color: darkred;
   padding-left: 180px;
   float: left;
-  
 }
 .nav-bottom > ul > li:hover {
   color: yellow;
 }
-.right-nav{
- 
-}
-.signup {
-  margin-left: 450px;
-}
+  
+
+
