@@ -12,6 +12,7 @@ import { Ipl } from "../components/Section/Ipl";
 import { Science } from "../components/Section/Science";
 import { Happiness } from "../components/Section/Happiness";
 import { Signup } from "../Signup-in/Signup";
+import { Footer } from "../components/Footer/Footer";
 
 export const AllRoutes = () => {
   return (
@@ -30,6 +31,8 @@ export const AllRoutes = () => {
         <Route exact path="/happiness" element={<Happiness />} />
         <Route exact path="/signup" element={<Signup />} />
       </Routes>
+      <Footer />
+     
     </>
   );
 };
