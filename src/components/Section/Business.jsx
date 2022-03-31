@@ -7,10 +7,10 @@ export const Business = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsdata.io/api/1/news?apikey=pub_5965cc077608927a90f6a98678e467c51d39&q=business&country=in&category=business,food,politics,science,technology "
+        "https://saurav.tech/NewsAPI/top-headlines/category/business/in.json"
       )
       .then(({ data }) => {
-        setData(data.results);
+        setData(data.articles);
         console.log(data);
       });
   }, []);
@@ -19,9 +19,11 @@ export const Business = () => {
       <h1>Business</h1>
       {data.map((data) => (
         <div>
-          <h3>{data.title}</h3>
+          <h2>{data.category}</h2>
+          <h4>{data.content}</h4>
           {data.description}
-          <img src={data.image_url} alt="" />
+          <img src={data.urlToImage} alt="" />
+          {data.video_url}
         </div>
       ))}
     </div>
