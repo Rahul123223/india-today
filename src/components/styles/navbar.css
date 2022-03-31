@@ -42,7 +42,7 @@
   padding-left: 180px;
   float: left;
 }
-.nav-bottom > ul > li:hover {
+.nav-bottom :hover {
   color: yellow;
 }
 

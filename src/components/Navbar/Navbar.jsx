@@ -40,6 +40,7 @@ export const Navbar = () => {
           <li>
             <Link
               to="/"
+              className="hov"
               style={{
                 textDecoration: "none",
                 color: "white",
