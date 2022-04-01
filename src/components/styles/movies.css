@@ -18,4 +18,8 @@
   .inside-main{
       margin-left: 40px;
   }
+  #main_container {
+    margin: auto;
+    width: 80%;
+  }
   

@@ -5,7 +5,7 @@ import "../styles/india.css";
 
 export const India = () => {
   const [data, setData] = useState([]);
-  const [showPerPage, setShowPerPage] = useState(5);
+  const [showPerPage, setShowPerPage] = useState(8);
 
   const [pagination, setPagination] = useState({
     start: 0,
@@ -29,10 +29,13 @@ export const India = () => {
       });
   };
   return (
-    <div>
-      <h1>India</h1>
-      {data.slice(pagination.start, pagination.end).map((data) => (
-        <>
+    <>
+      <div id="main_container">
+        <p style={{ color: "gray" }}>News / India</p>
+        <hr />
+        <h1>India</h1>
+        <hr />
+        {data.slice(pagination.start, pagination.end).map((data) => (
           <div className="data-container" key={data.id}>
             <img src={data.urlToImage} alt="" />
             <div className="inside-main">
@@ -40,13 +43,13 @@ export const India = () => {
               {data.description}
             </div>
           </div>
-        </>
-      ))}
-      <Pagination
-        showPerPage={showPerPage}
-        onPaginationChange={onPaginationChange}
-        total={data.length}
-      ></Pagination>
-    </div>
+        ))}
+        <Pagination
+          showPerPage={showPerPage}
+          onPaginationChange={onPaginationChange}
+          total={data.length}
+        ></Pagination>
+      </div>
+    </>
   );
 };
