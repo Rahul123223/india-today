@@ -1,31 +1,38 @@
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import "../styles/india.css";
 
 export const India = () => {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     axios
-      .get(
-        "https://newsapi.org/v2/everything?q=tesla&from=2022-02-28&sortBy=publishedAt&apiKey=0dcbbfcfc84a45d19d25a9367258820f"
-      )
+      .get("https://saurav.tech/NewsAPI/top-headlines/category/general/in.json")
       .then(({ data }) => {
         setData(data.articles);
         console.log(data);
       });
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexofFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexofFirstPost, indexOfLastPost);
+
   return (
     <div>
-      <h1> All about India section</h1>
-      {data.map((data) => (
-        <div style={{ display: "flex", flexWrap: "wrap", width:"200px" }}>
-          {data.author}
-          <img
-            src={data.urlToImage}
-            style={{ height: "300px", width: "400px" }}
-          ></img>
-          {data.content}
-        </div>
+      <h1>India</h1>
+      {currentPosts.map((data) => (
+        <>
+          <div className="data-container">
+            <img src={data.urlToImage} alt="" />
+            <div className="inside-main">
+              <h2>{data.title}</h2>
+              {data.description}
+            </div>
+          </div>
+        </>
       ))}
     </div>
   );

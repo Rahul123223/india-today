@@ -1,28 +1,39 @@
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-
+import "../styles/ipl.css";
 
 export const Ipl = () => {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     axios
-      .get(
-        "https://newsdata.io/api/1/news?apikey=pub_5965cc077608927a90f6a98678e467c51d39&q=news&country=in&language=en&category=sports"
-      )
+      .get("https://saurav.tech/NewsAPI/top-headlines/category/sports/in.json")
       .then(({ data }) => {
-        setData(data);
+        setData(data.articles);
         console.log(data);
       });
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexofFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexofFirstPost, indexOfLastPost);
+
   return (
     <div>
-      <h1>IPL 2022</h1>
-      {/* {data.map((data) => (
-        <div>
-          {data.description}
-        </div>
-      ))} */}
+      <h1>Ipl 2022</h1>
+      {currentPosts.map((data) => (
+        <>
+          <div className="data-container">
+              <img src={data.urlToImage} alt="" />
+            <div className="inside-main">
+              <h2>{data.title}</h2>
+              {data.content}
+            </div>
+          </div>
+        </>
+      ))}
     </div>
   );
 };

@@ -1,28 +1,38 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../styles/business.css";
 
 export const Business = () => {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     axios
-      .get(
-        "https://newsdata.io/api/1/news?apikey=pub_5965cc077608927a90f6a98678e467c51d39&q=business&country=in&category=business,food,politics,science,technology "
-      )
+      .get("https://saurav.tech/NewsAPI/top-headlines/category/business/in.json")
       .then(({ data }) => {
-        setData(data.results);
+        setData(data.articles);
         console.log(data);
       });
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexofFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexofFirstPost, indexOfLastPost);
+
   return (
     <div>
       <h1>Business</h1>
-      {data.map((data) => (
-        <div>
-          <h3>{data.title}</h3>
-          {data.description}
-          <img src={data.image_url} alt="" />
-        </div>
+      {currentPosts.map((data) => (
+        <>
+          <div className="data-container">
+              <img src={data.urlToImage} alt="" />
+            <div className="inside-main">
+              <h2>{data.title}</h2>
+              {data.description}
+            </div>
+          </div>
+        </>
       ))}
     </div>
   );
