@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../styles/world.css";
 
 export const World = () => {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     axios
@@ -12,17 +15,24 @@ export const World = () => {
         console.log(data);
       });
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexofFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexofFirstPost, indexOfLastPost);
+
   return (
     <div>
       <h1>World</h1>
-      {data.map((data) => (
-        <div>
-          <h2>{data.category}</h2>
-          <h4>{data.content}</h4>
-          {data.description}
-          <img src={data.urlToImage} alt="" />
-          {data.video_url}
-        </div>
+      {currentPosts.map((data) => (
+        <>
+          <div className="data-container">
+              <img src={data.urlToImage} alt="" />
+            <div className="inside-main">
+              <h2>{data.title}</h2>
+              {data.description}
+            </div>
+          </div>
+        </>
       ))}
     </div>
   );

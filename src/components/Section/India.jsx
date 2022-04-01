@@ -5,7 +5,7 @@ import "../styles/india.css";
 export const India = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(20);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     axios
@@ -26,10 +26,9 @@ export const India = () => {
       {currentPosts.map((data) => (
         <>
           <div className="data-container">
-          
             <img src={data.urlToImage} alt="" />
             <div className="inside-main">
-              <h3>{data.title}</h3>
+              <h2>{data.title}</h2>
               {data.description}
             </div>
           </div>
