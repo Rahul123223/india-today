@@ -22,7 +22,7 @@ export const Science = () => {
 
   return (
     <div>
-      <h1>Ipl 2022</h1>
+      <h1>Science</h1>
       {currentPosts.map((data) => (
         <>
           <div className="data-container">
