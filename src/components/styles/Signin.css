@@ -1,0 +1,72 @@
+.Signin_header{
+    height:50px;
+    width:100%;
+    border:  1px solid black;
+    display:flex;
+    background-color: black;
+    gap:55%;
+
+}
+.india{
+    font-family :Roboto-regular;
+    font-size:18px;
+    color:rgb(170, 170, 170);
+    margin-left:100px;
+    font-weight:300;
+
+}
+.img{
+    height: 100px;
+    width:70px;
+    margin-left:200px;
+}
+.top{
+    margin-left:40%;
+    font-size:35px;
+    line-height:36px;
+    vertical-align:top;
+    font-weight:500;
+    color:black;
+    font-family: Roboto-Regular;
+    margin-top:20px;
+
+
+}
+.top1{
+    margin-left:42%;
+    font-weight: 500;
+    font-family: Roboto-Regular ;
+    font-size:16px;
+    margin-top:-15px;
+    color:rgba(0, 0, 0, 0.822);
+}
+.top2{
+    color:rgb(208, 38, 44);
+    font-weight: 400;
+}
+.deco{
+    font-size:17px;
+    color:rgba(119,119,119);
+    font-family: Roboto-Regular;
+    text-align: center;
+    font-weight: 300;
+
+
+}
+.icon{
+    display:flex;
+    gap:30px;
+    margin-left:40%;
+}
+.one{
+    font-size:20px;
+    color:rgba(119,119,119);
+    font-family: Roboto-Regular;
+    text-align: center;
+    font-weight: 100;
+    line-height:19px;
+}
+.ary1{
+    display:flex;
+    margin-left:30%;
+}
