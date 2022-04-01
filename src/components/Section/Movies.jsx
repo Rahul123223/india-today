@@ -4,8 +4,6 @@ import "../styles/movies.css";
 
 export const Movies = () => {
   const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(20);
 
   useEffect(() => {
     axios
@@ -18,16 +16,11 @@ export const Movies = () => {
       });
   }, []);
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexofFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = data.slice(indexofFirstPost, indexOfLastPost);
-
   return (
     <div>
-       <h1>Movies</h1>
-      {currentPosts.map((data) => (
+      <h1>Movies</h1>
+      {data.map((data) => (
         <>
-         
           <div className="data-container">
             <img src={data.urlToImage} alt="" />
             <div className="inside-main">
