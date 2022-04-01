@@ -56,7 +56,41 @@
 .icon{
     display:flex;
     gap:30px;
-    margin-left:40%;
+    margin-left:33%;
+}
+.hu{
+    display:flex;
+
+}
+.zz{
+    height:40px;
+    width:40px;
+}
+.twitter{
+    height:40px;
+    width:100px;
+    color:white;
+    background-color: rgb(29, 174, 227);
+    text-align: center;
+    font-size: 18px;
+
+
+}
+.fb{
+    height:40px;
+    width:100px;
+    color:white;
+    background-color: rgb(59, 89, 152);
+    text-align: center;
+    font-size: 18px;
+}
+.ggl{
+    height:40px;
+    width:100px;
+    color:black;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    font-size: 18px;
 }
 .one{
     font-size:20px;
@@ -84,7 +118,23 @@
     padding:5px;
     width: 310px;
 }
-.Name{
+.name{
+    height: 40px;
+    font-size:13px;
+    font-family:Arial;
+    padding:5px;
+    width: 300px;
+
+}
+.email{
+    height: 40px;
+    font-size:13px;
+    font-family:Arial;
+    padding:5px;
+    width: 300px;
+
+}
+.password{
     height: 40px;
     font-size:13px;
     font-family:Arial;
@@ -94,14 +144,14 @@
 }
 .box{
     height:100px;
-    width:550px;
+    width:560px;
     border: 1px solid transparent;
     margin:auto;
 
 }
 .inpt{
-    width:8px;
-    height:8px;
+    width:12px;
+    height:12px;
     }
     .span{
         font-size: 13px;
@@ -110,12 +160,12 @@
         font-weight:700;
     }
     .ss{
-        margin-left:44%;
+        margin-left:43%;
         height:45px;
         width:200px;
         border-radius: 5px;
         color:white;
-        background-color: rgba(44, 138, 214, 0.945);
+        background-color:rgb(21, 140, 245);
         border: rgba(0, 119, 255, 0.815);
         font-style:roboto-regular;
         padding:10px;
