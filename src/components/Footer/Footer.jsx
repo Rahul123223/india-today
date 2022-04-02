@@ -4,7 +4,7 @@ import "../styles/footer.css";
 export const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
+      <div id="footer_cont">
         <div className="box-one">
           <h5>PUBLICATIONS:</h5>
           <p>Business Today</p>

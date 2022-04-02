@@ -127,7 +127,7 @@ export const News4 = () => {
   ];
   return (
     <div className="main">
-      <div className="container">
+      <div className="prog">
         <div className="data">
           {data.map((e) => {
             return (

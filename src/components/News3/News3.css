@@ -21,6 +21,8 @@
   margin-left: 10px;
 }
 .conatainer {
+  justify-content: center;
+  margin: auto;
   display: flex;
   gap: 50px;
 }

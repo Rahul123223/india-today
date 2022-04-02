@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/LandingPage.css";
+import "./LandingPage.css";
 import Carousel from "react-elastic-carousel";
 import { News2 } from "../News2/News2";
 import { News3 } from "../News3/News3";
@@ -137,7 +137,7 @@ export const LandingPage = () => {
 
   return (
     <div className="maindiv">
-      <div className="container">
+      <div id="child-div">
         <div className="newsdiv">
           <div>
             <div className="imgdiv">

@@ -50,6 +50,7 @@ ul li::before {
   background-color: rgb(238, 238, 238);
   width: 750px;
   padding: 15px;
+  margin: auto;
   /* margin-bottom: 100px; */
 }
 .magazinetitle {

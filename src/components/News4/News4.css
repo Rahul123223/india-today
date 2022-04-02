@@ -62,3 +62,6 @@ li:hover,
 .data2 > div {
   width: 350px;
 }
+.prog{
+  display: flex;
+}
