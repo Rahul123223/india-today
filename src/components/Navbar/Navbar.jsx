@@ -177,7 +177,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/happiness"
+              to="/"
               style={{ textDecoration: "none", color: "white" }}
             >
               HAPPINESS QUEST

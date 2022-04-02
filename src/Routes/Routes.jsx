@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "../components/Navbar/Navbar";
 import { India } from "../components/Section/India";
-import { Myfeed } from "../components/Section/Myfeed";
+import { MyNewsFeed } from "../components/Section/MyNewsFeed";
 import { Business } from "../components/Section/Business";
 import { Tech } from "../components/Section/Tech";
 import { World } from "../components/Section/World";
@@ -21,7 +21,7 @@ export const AllRoutes = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/myfeed" element={<Myfeed />} />
+        <Route exact path="/myfeed" element={<MyNewsFeed />} />
         <Route exact path="/india" element={<India />} />
         <Route exact path="/business" element={<Business />} />
         <Route exact path="/world" element={<World />} />

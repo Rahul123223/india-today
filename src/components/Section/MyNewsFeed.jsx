@@ -1,5 +1,6 @@
 import { BiPencil } from "react-icons/bi";
-import "./MyNewsFeed.css";
+import "../styles/MyNewsFeed.css";
+import { Link } from "react-router-dom";
 export const MyNewsFeed = () => {
   return (
     <div>
@@ -188,14 +189,16 @@ export const MyNewsFeed = () => {
           <p>Science</p>
         </div>
       </div>
-      <button
-        className="skip"
-        onClick={() => {
-          // Navigate to Landing Page
-        }}
-      >
-        SKIP
-      </button>
+      <Link to="/">
+        <button
+          className="skip"
+          onClick={() => {
+            // Navigate to Landing Page
+          }}
+        >
+          SKIP
+        </button>
+      </Link>
     </div>
   );
 };
