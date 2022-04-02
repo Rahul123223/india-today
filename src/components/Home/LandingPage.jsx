@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./LandingPage.css";
+import "../styles/LandingPage.css";
 import Carousel from "react-elastic-carousel";
-import { News2 } from "./News2/News2";
-import { News3 } from "./News3/News3";
-import { News4 } from "./News4/News4";
-import { Scroll } from "./Scroll/Scroll";
+import { News2 } from "../News2/News2";
+import { News3 } from "../News3/News3";
+import { News4 } from "../News4/News4";
+import { Scroll } from "../Scroll/Scroll";
 
 export const LandingPage = () => {
   const breakpoints = [

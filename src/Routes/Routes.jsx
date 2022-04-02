@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "../components/Home/Home";
 import { Navbar } from "../components/Navbar/Navbar";
 import { India } from "../components/Section/India";
 import { Myfeed } from "../components/Section/Myfeed";
@@ -13,13 +12,15 @@ import { Science } from "../components/Section/Science";
 import { Happiness } from "../components/Section/Happiness";
 import { Signup } from "../Signup-in/Signup";
 import { Footer } from "../components/Footer/Footer";
+import { LandingPage } from "../components/Home/LandingPage";
+
 
 export const AllRoutes = () => {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/myfeed" element={<Myfeed />} />
         <Route exact path="/india" element={<India />} />
         <Route exact path="/business" element={<Business />} />
