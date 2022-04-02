@@ -35,7 +35,7 @@
   margin: 8px;
 }
 #nav-bottom {
-  border: 1px solid rebeccapurple;
+  border: 1px solid darkred;
   width: 100%;
   height: 50px;
   background-color: darkred;
@@ -45,6 +45,3 @@
 .nav-bottom :hover {
   color: yellow;
 }
-
-
-
