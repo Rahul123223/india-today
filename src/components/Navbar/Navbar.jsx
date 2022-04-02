@@ -12,15 +12,79 @@ export const Navbar = () => {
   return (
     <div className="navbar" id="navbar">
       <ul>
-        <li>IndaToday</li>
-        <li>Malayam</li>
-        <li>Business Today</li>
-        <li>DailyO</li>
-        <li>AajTak</li>
-        <li>Lallantop</li>
-        <li>GNTTV</li>
-        <li>iChowk</li>
-        <li>Reader's Digest</li>
+        <li>
+          <a
+            href="https://www.indiatoday.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            IndiaToday
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://malayalam.indiatoday.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            Malayalam
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.businesstoday.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            Business Today
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.dailyo.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            DailyO
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.aajtak.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            AajTak
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.thelallantop.com/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            Lallantop
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.thelallantop.com/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            Lallantop
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.gnttv.com/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            GNTTV
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://www.readersdigest.in/"
+            style={{ textDecoration: "none", color: "gray", target: "_blank" }}
+          >
+            Reader's Digest
+          </a>
+        </li>
       </ul>
       <hr />
       <div className="nav-centrall">
@@ -117,8 +181,7 @@ export const Navbar = () => {
               style={{ textDecoration: "none", color: "white" }}
             >
               HAPPINESS QUEST
-            </Link> 
-           
+            </Link>
           </li>
           <li>
             <FaBitcoin style={{ height: "20px" }}></FaBitcoin>
