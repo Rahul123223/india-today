@@ -9,7 +9,6 @@ export const AllRoutes = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
-        
       </Routes>
     </>
   );
