@@ -11,6 +11,7 @@
 .img {
   width: 350px;
   height: 200px;
+  margin: auto;
 }
 .title {
   font-size: 18px;
@@ -22,6 +23,7 @@
   line-height: 24px;
   text-align: start;
 }
+
 .li {
   font-size: 15px;
   line-height: 20px;
@@ -30,14 +32,13 @@
   padding: 10px 0px;
   font-weight: 500;
   margin-left: -20px;
+  list-style: none;
 }
 .desc:hover,
 .li:hover {
   color: #193984;
 }
-ul {
-  list-style: none;
-}
+
 ul li::before {
   content: "\2022";
   color: red;

@@ -1,3 +1,7 @@
+.myfeed_main{
+  margin: auto;
+}
+
 .section {
   display: flex;
   background-color: rgb(238, 238, 238);
@@ -26,9 +30,11 @@ h3 {
   height: 2px;
 }
 img {
+  margin: auto;
   width: 100px;
 }
 .img {
+
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
@@ -41,6 +47,7 @@ img {
   height: 100px;
   width: 2px;
   margin-left: 20px;
+  margin: auto;
 }
 .flex {
   display: flex;

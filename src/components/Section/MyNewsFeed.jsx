@@ -3,7 +3,7 @@ import "../styles/MyNewsFeed.css";
 import { Link } from "react-router-dom";
 export const MyNewsFeed = () => {
   return (
-    <div>
+    <div className="myfeed_main">
       <div className="section">
         <h3 className="one">
           My News Feed<div className="line"></div>

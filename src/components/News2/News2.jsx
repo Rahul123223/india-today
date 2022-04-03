@@ -84,7 +84,7 @@ export const News2 = () => {
               <h1 className="title">{e.title}</h1>
               <img src={e.img} alt="" className="img" />
               <h1 className="desc">{e.desc}</h1>
-              <ul>
+              <ul className="ul">
                 <li className="li">{e.point1}</li>
                 <li className="li">{e.point2}</li>
               </ul>
