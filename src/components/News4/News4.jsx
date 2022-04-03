@@ -136,7 +136,7 @@ export const News4 = () => {
                 <img src={e.img} alt="" />
                 <h3>{e.desc}</h3>
                 <hr />
-                <ul>
+                <ul className="ultag">
                   <li>{e.li1}</li>
                   <hr />
                   <li>{e.li2}</li>
@@ -168,7 +168,7 @@ export const News4 = () => {
               <img src={e.img} alt="" />
               <h3>{e.desc}</h3>
               <hr />
-              <ul>
+              <ul className="ultag">
                 <li>{e.li1}</li>
                 <hr />
                 <li>{e.li2}</li>

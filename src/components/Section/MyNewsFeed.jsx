@@ -23,7 +23,7 @@ export const MyNewsFeed = () => {
         <h3>Auto</h3>
         <h3>Programmes</h3>
       </div>
-      <div className="img">
+      <div className="img" id="img">
         <div>
           <div className="flex">
             <img

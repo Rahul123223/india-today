@@ -10,10 +10,10 @@ import { Movies } from "../components/Section/Movies";
 import { Ipl } from "../components/Section/Ipl";
 import { Science } from "../components/Section/Science";
 import { Happiness } from "../components/Section/Happiness";
-import { Signup } from "../Signup-in/Signup";
 import { Footer } from "../components/Footer/Footer";
 import { LandingPage } from "../components/Home/LandingPage";
-
+import { Signin } from "../components/User/Signin";
+import { Register } from "../components/User/Register";
 
 export const AllRoutes = () => {
   return (
@@ -30,10 +30,10 @@ export const AllRoutes = () => {
         <Route exact path="/ipl" element={<Ipl />} />
         <Route exact path="/science" element={<Science />} />
         <Route exact path="/happiness" element={<Happiness />} />
-        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/signup" element={<Signin />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
       <Footer />
-     
     </>
   );
 };

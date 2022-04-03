@@ -9,6 +9,9 @@
   width: 200px;
   transition: all 0.5s ease 0s;
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+
 }
 .data-container img:hover {
   transform: scale(1.1);

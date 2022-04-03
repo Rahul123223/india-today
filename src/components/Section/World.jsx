@@ -38,7 +38,7 @@ export const World = () => {
         <>
           <div className="data-container" key={data.id}>
             <img src={data.urlToImage} alt="" />
-            <div className="inside-main">
+            <div className="inside-main" id="insidemain">
               <h2>{data.title}</h2>
               {data.description}
             </div>

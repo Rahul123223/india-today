@@ -38,7 +38,7 @@ export const Movies = () => {
     <hr />
       {data.slice(pagination.start, pagination.end).map((data) => (
         <>
-          <div className="data-container" key={data.id}>
+          <div id="data-container" key={data.id}>
             <img src={data.urlToImage} alt="" />
             <div className="inside-main">
               <h2>{data.title}</h2>
